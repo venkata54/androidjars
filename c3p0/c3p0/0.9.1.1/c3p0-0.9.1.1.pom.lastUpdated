@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jun 29 11:41:04 CEST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1435570864386
+${android.sdk.path}/extras/android/m2repository/.error=Could not transfer artifact c3p0\:c3p0\:pom\:0.9.1.1 from/to Android Extra Repro (${android.sdk.path}/extras/android/m2repository)\: No connector available to access repository Android Extra Repro (${android.sdk.path}/extras/android/m2repository) of type default using the available factories WagonRepositoryConnectorFactory
+default-${android.sdk.path}/extras/android/m2repository/.lastUpdated=1435570864297

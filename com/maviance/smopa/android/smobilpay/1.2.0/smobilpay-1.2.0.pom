@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Reference to parent maven configuration (don't change) -->
+	<parent>
+		<groupId>com.maviance.smopa.android</groupId>
+		<artifactId>applications</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../smopa-main/applications</relativePath>
+	</parent>
+
+	<artifactId>smobilpay</artifactId> <!-- Project Name -->
+	<version>1.2.0</version>  <!-- APK Version Text -->
+	<packaging>apk</packaging> <!-- Type of final binary (don't change) -->
+	<name>smopaandroid-app-smobilpay</name> <!-- Project Name visible only in maven build -->
+
+	<properties>
+		<smopa.branch></smopa.branch> <!-- Branch name or empty for trunk -->
+		<!-- Version visible in Help and About -->
+		<smopa.mpay.versionname>MPAY ${pom.version}.${buildNumber}</smopa.mpay.versionname>
+		<smopa.androidSdk>18</smopa.androidSdk> <!-- Android Target SDK -->
+		<smopa.versionCode>5</smopa.versionCode> <!-- APK Version (number) -->
+	</properties>
+
+	<!-- Project links to SVN Repositiory (for getting SVN Revision number) -->
+	<scm>
+		<url>scm:git:ssh://git@maviance.org:7889/maviance/android-smobilpay</url>
+		<connection>scm:git:ssh://git@maviance.org:7889/maviance/android-smobilpay</connection>
+		<developerConnection>scm:git:ssh://git@maviance.org:7889/maviance/android-smobilpay</developerConnection>
+	</scm>
+
+	<!-- Project additional dependencies (except Core) -->
+	<dependencies>
+		<dependency>
+			<groupId>net.sf.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>2.3</version>
+		</dependency>
+	</dependencies>
+
+</project>

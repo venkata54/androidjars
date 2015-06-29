@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jun 29 13:05:21 CEST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1435575921190
+/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository/.error=Could not transfer artifact net.sf.opencsv\:opencsv\:pom\:2.3 from/to Android Extra Repro (/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository)\: No connector available to access repository Android Extra Repro (/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository) of type default using the available factories WagonRepositoryConnectorFactory
+default-/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository/.lastUpdated=1435575921092

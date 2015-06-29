@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jun 29 13:05:22 CEST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1435575922103
+/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository/.error=Could not transfer artifact xpp3\:xpp3\:pom\:1.1.4c from/to Android Extra Repro (/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository)\: No connector available to access repository Android Extra Repro (/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository) of type default using the available factories WagonRepositoryConnectorFactory
+default-/home/vskomm/Downloads/android-sdk-linux/extras/android/m2repository/.lastUpdated=1435575922019

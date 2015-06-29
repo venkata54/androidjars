@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.maviance.smopa.android</groupId>
+		<artifactId>api</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../smopa-main/api</relativePath>
+	</parent>
+
+	<artifactId>api-cas-libs</artifactId>
+	<version>${smopa.cas.ver}</version>
+	<packaging>apklib</packaging>
+	<name>smopaandroid-api-cas-libs</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>net.sqlcipher.database</groupId>
+			<artifactId>android-sqlcipher</artifactId>
+			<version>3.0.2</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.7</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>r09</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.findbugs</groupId>
+			<artifactId>jsr305</artifactId>
+			<version>1.3.9</version>
+		</dependency>
+		<!-- <dependency> -->
+		<!-- <groupId>com.ibm.icu</groupId> -->
+		<!-- <artifactId>icu4j</artifactId> -->
+		<!-- <version>50.1</version> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>2.1.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.bugsense</groupId>
+			<artifactId>bugsense</artifactId>
+			<version>3.1</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>com.sewoo</groupId>
+			<artifactId>sewoo-android</artifactId>
+			<version>1.0</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>com.lambdaworks</groupId>
+			<artifactId>scrypt</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>android-integration</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-compress</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+<!-- 		<dependency> -->
+<!-- 			<groupId>net.sf.json-lib</groupId> -->
+<!-- 			<artifactId>json-lib</artifactId> -->
+<!-- 			<version>2.4</version> -->
+<!-- 			<classifier>jdk15</classifier>    -->
+<!-- 		</dependency> -->
+	</dependencies>
+
+	<!-- Disable defualt reports becasue for PMD and Checkstyle reports are 
+		huge... about 18MB and 26MB -->
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>2.5.2</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>2.7.1</version>
+
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.3</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+		<excludeDefaults>true</excludeDefaults>
+	</reporting>
+</project>

@@ -1,0 +1,5 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Jun 29 12:11:23 CEST 2015
+http\://repo.maven.apache.org/maven2/.lastUpdated=1435572683464
+${android.sdk.path}/extras/android/m2repository/.error=Could not transfer artifact com.google.zxing\:javase\:jar\:2.2 from/to Android Extra Repro (${android.sdk.path}/extras/android/m2repository)\: No connector available to access repository Android Extra Repro (${android.sdk.path}/extras/android/m2repository) of type default using the available factories WagonRepositoryConnectorFactory
+default-${android.sdk.path}/extras/android/m2repository/.lastUpdated=1435572682263
